@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Login</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <nav class="navbar nav-1">
+      <section class="flex">
+         <a href="/" class="logo"><i class="fas fa-house"></i>RentEase</a>
+
+         <ul>
+            <li></li>
+         </ul>
+      </section>
+   </nav>
+
+
+</header>
+
+<!-- header section ends -->
+
+<!-- login section starts  -->
+<section class="form-container">
+
+   <form action="" method="post">
+      {% if msg is defined and msg %}
+      <div class="fas fa-ban"><h2>{{msg}}</h2></div>
+      {% endif %}
+      <h3>welcome back!</h3>
+      <input type="email" name="email" required maxlength="50" placeholder="enter your email" class="box">
+      <input type="password" name="pass" required minlength="8" maxlength="20" placeholder="enter your password" class="box">
+      <p>don't have an account? <a href="/register">register new</a></p>
+      <input type="submit" value="login now" name="submit" class="btn">
+   </form>
+
+</section>
+
+<!-- login section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer section starts  -->
+
+<footer class="footer">
+
+   <section class="flex">
+
+      <div class="box">
+         <a href="tel:+91-8696015433"><i class="fas fa-phone"></i><span>+91 86189 42109</span></a>
+         <a href="tel:+91-88484 61673"><i class="fas fa-phone"></i><span>+91 86189 42109</span></a>
+         <a ><i class="fas fa-envelope"></i><span>sahil.natikar@gmail.com</span></a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i><span>Manipal, India</span></a>
+      </div>
+
+      <div class="box">
+         <a href="#"><span>facebook</span><i class="fab fa-facebook-f"></i></a>
+         <a href="#"><span>twitter</span><i class="fab fa-twitter"></i></a>
+         <a href="#"><span>linkedin</span><i class="fab fa-linkedin"></i></a>
+         <a href="#"><span>instagram</span><i class="fab fa-instagram"></i></a>
+
+      </div>
+
+   </section>
+
+   <div class="credit"><span></span></div>
+
+</footer>
+
+<!-- footer section ends -->
+
+
+
+</body>
+</html>

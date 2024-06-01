@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+   <nav class="navbar nav-1">
+      <section class="flex">
+         <a href="/" class="logo"><i class="fas fa-house"></i>RentEase</a>
+
+         <a href="/login"><input  value="login" name="Login" class="inline-btn"></a>
+      
+      
+
+      </section>
+   </nav>
+
+
+</header>
+
+<!-- header section ends -->
+
+
+
+<!-- services section starts  -->
+
+<section class="services">
+
+   <h1 class="heading">our services</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="{{url_for('static', filename= 'images/icon-2.png')}}" alt="">
+         <h3>View Flat Details</h3>
+         <p>View available listings for flats to rent, view more details about a listing.</p>
+      </div>
+
+
+      <div class="box">
+         <img src="{{url_for('static', filename= 'images/icon-4.png')}}" alt="">
+         <h3>Rent Flats</h3>
+         <p>Get in touch with the owner, to cut out the middle man.</p>
+      </div>
+
+      <div class="box">
+         <img src="{{url_for('static', filename= 'images/icon-6.png')}}" alt="">
+         <h3>24/7 service</h3>
+         <p>Our website is reliable, which means its always running. Since it is just a listing platform, expect it to work all the time.</p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- listings section starts  -->
+
+<section class="listings">
+
+   <div style="margin-top: 2rem; text-align:center;">
+      <a href="/listings" class="inline-btn">view listings</a>
+   </div>
+
+</section>
+
+<!-- listings section ends -->
+
+
+
+
+
+
+
+
+
+
+<!-- footer section starts  -->
+
+<footer class="footer">
+
+   <section class="flex">
+
+      <div class="box">
+         <a href="tel:+91-8696015433"><i class="fas fa-phone"></i><span>+91 86189 42109</span></a>
+         <a href="tel:+91-88484 61673"><i class="fas fa-phone"></i><span>+91 88484 61673</span></a>
+         <a ><i class="fas fa-envelope"></i><span>sahil.natikar@gmail.com</span></a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i><span>Manipal, India</span></a>
+      </div>
+
+   
+
+      <div class="box">
+         <a href="#"><span>linkedin</span><i class="fab fa-linkedin"></i></a>
+         <a href="#"><span>instagram</span><i class="fab fa-instagram"></i></a>
+
+      </div>
+
+   </section>
+
+   <div class="credit"><span></span></div> 
+
+</footer>
+
+<!-- footer section ends -->
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

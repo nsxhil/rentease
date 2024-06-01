@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>View Property</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <nav class="navbar nav-1">
+      <section class="flex">
+         <a href="/" class="logo"><i class="fas fa-house"></i>RentEase</a>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- view property section starts  -->
+
+<section class="view-property">
+
+   <div class="details">
+      <div class="thumb">
+         <div class="big-image">
+            <img src="{{url_for('static', filename='images/house-img-1.webp')}}" alt="">
+         </div>
+         <div class="small-images">
+            <img src="{{url_for('static', filename='images/house-img-1.webp')}}" alt="">
+            <img src="{{url_for('static', filename='images/hall-img-1.webp')}}" alt="">
+            <img src="{{url_for('static', filename='images/bathroom-img-1.webp')}}" alt="">
+            <img src="{{url_for('static', filename='images/house-img-1.webp')}}" alt="">
+         </div>
+      </div>
+      <h3 class="name">{{House.block}} {{House.house_no}} {{House.a_name}}</h3>
+      <p class="location"><i class="fas fa-map-marker-alt"></i><span>{{loc.address}} {{loc.pincode}}</span></p>
+      <div class="info">
+         <p><i class="fas fa-tag"></i><span>{{House.rent}}</span></p>
+         <p><i class="fas fa-user"></i><span>{{House.o_name}}</span></p>
+         <p><i class="fas fa-phone"></i>{{House.o_contactno}}</p>
+         <p><i class="fas fa-building"></i><span>flat</span></p>
+         <p><i class="fas fa-house"></i><span>rent</span></p>
+         </div>
+      <h3 class="title">Details</h3>
+      <div class="flex">
+         <div class="box">
+            <p><i>rooms :</i><span>{{House.bhk}}BHK</span></p>
+            <!--<p><i>deposit amount :</i><span>0</span></p>-->
+            <p><i>status :</i><span>ready to move</span></p>
+            <p><i>bedroom :</i><span>{{House.bhk}}</span></p>
+            <p><i>bathroom :</i><span>{{House.bhk}}</span></p>
+            <p><i>balcony :</i><span>{{House.bhk}}</span></p>
+         </div>
+         <div class="box">
+            <p><i>carpet area :</i><span>{{House.area}}</span></p>
+            <p><i>age :</i><span>3 years</span></p>
+            <p><i>room floor  :</i><span>{{House.house_no[0]}}</span></p>
+            <!-- <p><i>total floors :</i><span>22</span></p> -->
+            <p><i>furnished :</i><span>{{House.furnished}}</span></p>
+         </div>
+      </div>
+      <h3 class="title">amenities</h3>
+      <div class="flex">
+         <div class="box">
+            {% for amenities in l %}
+            <p><i class="fas fa-check"></i><span>{{amenities}}</span></p>
+            {% endfor %}
+         </div>
+      </div>
+      
+      <h3 class="title">Budget Calculator</h3>
+      <div class="flex">
+         <div class="box">
+               <p><i class="fas fa-tag"></i><span> ₹{{expense}} per year for this flat.</span></p>
+               <p><span>This is an approximate expense calculator for respective houses for the 1 year rent period. It takes in consideration of rent, broker charges, deposit and other maintenance charge taken in average which is a rough figure.</span></p>
+               <p><span><strong>NOTE: We do not account any personal expense to our calculation as it depends on the person and the figure we are providing is a rough estimate and is not actually the exact value.</strong></span></p>
+         </div>
+      </div>
+
+      <div class="box">
+      <h3 class="title">Broker Details</h3>
+      <div class="flex">
+         <div class="box">
+            {% if bro %}
+            <p><i class="bname">Name: </i><span>{{bro.b_name}}</span></p>
+            <p><i class="bid">Broker Id:</i><span> {{bro.b_id}}</span></p>
+            <p><i class="bphone">Contact no:</i><span> {{bro.b_contactno}}</span></p>
+            <p><i class="bfee">Broker Fee:</i><span> Rs.{{bfee}}</span></p>
+            {% endif %}
+         </div>
+      </div>
+   </div>
+         <h3 class="title">Reviews</h3>
+         <div class="flex">
+         <div class="box">
+         {% if re %}
+         <p class="bhk">{{re.reviews}}</p>
+         <p class="bhk">{{re.ratings}}/5</p>
+         {% endif %}
+            </div>
+         </div> 
+      </div>
+
+
+   </div>
+
+</section>
+
+<!--  view property section ends -->
+
+
+
+
+
+
+
+<!-- footer section starts  -->
+
+<footer class="footer">
+
+   <section class="flex">
+
+      <div class="box">
+         <a href="tel:+91-8696015433"><i class="fas fa-phone"></i><span>+91 86189 42109</span></a>
+         <a href="tel:+91-88484 61673"><i class="fas fa-phone"></i><span>+91 86189 42109</span></a>
+         <a ><i class="fas fa-envelope"></i><span>sahil.natikar@gmail.com</span></a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i><span>Manipal, India</span></a>
+      </div>
+
+      <div class="box">
+         <a href="#"><span>facebook</span><i class="fab fa-facebook-f"></i></a>
+         <a href="#"><span>twitter</span><i class="fab fa-twitter"></i></a>
+         <a href="#"><span>linkedin</span><i class="fab fa-linkedin"></i></a>
+         <a href="#"><span>instagram</span><i class="fab fa-instagram"></i></a>
+
+      </div>
+
+   </section>
+
+   <div class="credit"><span></span></div>
+
+</footer>
+
+<!-- footer section ends -->
+
+
+</body>
+</html>
