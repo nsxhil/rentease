@@ -1,0 +1,109 @@
+INSERT INTO apartment VALUES ("Green Meadows", "Park Street, Manipal");
+INSERT INTO apartment VALUES ("Golden Towers", "Main Road, Manipal");
+INSERT INTO apartment VALUES ("Sunrise Residency", "Sunrise Avenue, Manipal");
+INSERT INTO apartment VALUES ("Ocean View Apartments", "Coastal Road, Manipal");
+INSERT INTO apartment VALUES ("Pinecrest Estates", "Pine Street, Manipal");
+
+INSERT INTO location VALUES ("Park Street, Manipal", "576105");
+INSERT INTO location VALUES ("Main Road, Manipal", "576104");
+INSERT INTO location VALUES ("Sunrise Avenue, Manipal", "576104");
+INSERT INTO location VALUES ("Coastal Road, Manipal", "576105");
+
+INSERT INTO amenities VALUES ("Green Meadows", 1, 1, 0, 1, 1, 0);
+INSERT INTO amenities VALUES ("Golden Towers", 1, 0, 1, 1, 1, 1);
+INSERT INTO amenities VALUES ("Sunrise Residency", 0, 1, 1, 1, 1, 0);
+INSERT INTO amenities VALUES ("Ocean View Apartments", 1, 1, 1, 0, 1, 1);
+INSERT INTO amenities VALUES ("Pinecrest Estates", 1, 0, 0, 1, 0, 0);
+
+INSERT INTO broker (b_name, brokerage, b_contactno) VALUES ("Rajesh", 110, "9845671234");
+INSERT INTO broker (b_name, brokerage, b_contactno) VALUES ("Sneha", 95, "7894562310");
+INSERT INTO broker (b_name, brokerage, b_contactno) VALUES ("Manju", 85, "8974563210");
+INSERT INTO broker (b_name, brokerage, b_contactno) VALUES ("Vijay", 105, "8765432109");
+INSERT INTO broker (b_name, brokerage, b_contactno) VALUES ("Priya", 80, "9876543210");
+INSERT INTO broker (b_name, brokerage, b_contactno) VALUES ("Amit", 120, "8901234567");
+INSERT INTO broker (b_name, brokerage, b_contactno) VALUES ("Kavitha", 95, "8765432101");
+INSERT INTO broker (b_name, brokerage, b_contactno) VALUES ("Ravi", 100, "7654321098");
+INSERT INTO broker (b_name, brokerage, b_contactno) VALUES ("Deepa", 85, "8765432102");
+INSERT INTO broker (b_name, brokerage, b_contactno) VALUES ("Sanjay", 110, "6543210987");
+
+INSERT INTO owners (o_name, o_contactno) VALUES ("Anusha", "7896531472");
+INSERT INTO owners (o_name, o_contactno) VALUES ("Nisha", "9876543210");
+INSERT INTO owners (o_name, o_contactno) VALUES ("Harsh", "8765432109");
+INSERT INTO owners (o_name, o_contactno) VALUES ("Prakash", "8901234567");
+INSERT INTO owners (o_name, o_contactno) VALUES ("Suman", "8765432101");
+INSERT INTO owners (o_name, o_contactno) VALUES ("Priya", "7654321098");
+INSERT INTO owners (o_name, o_contactno) VALUES ("Kumar", "8765432102");
+INSERT INTO owners (o_name, o_contactno) VALUES ("Rani", "6543210987");
+INSERT INTO owners (o_name, o_contactno) VALUES ("Rahul", "7896531471");
+INSERT INTO owners (o_name, o_contactno) VALUES ("Neha", "9876543211");
+INSERT INTO owners (o_name, o_contactno) VALUES ("Suresh", "8765432103");
+INSERT INTO owners (o_name, o_contactno) VALUES ("Latha", "7654321099");
+INSERT INTO owners (o_name, o_contactno) VALUES ("Gopal", "8765432104");
+INSERT INTO owners (o_name, o_contactno) VALUES ("Swetha", "6543210986");
+INSERT INTO owners (o_name, o_contactno) VALUES ("Alok", "7896531473");
+INSERT INTO owners (o_name, o_contactno) VALUES ("Riya", "9876543212");
+INSERT INTO owners (o_name, o_contactno) VALUES ("Varun", "8765432105");
+INSERT INTO owners (o_name, o_contactno) VALUES ("Deepika", "7654321097");
+INSERT INTO owners (o_name, o_contactno) VALUES ("Karthik", "8765432106");
+INSERT INTO owners (o_name, o_contactno) VALUES ("Ayesha", "6543210985");
+
+INSERT INTO house VALUES ("Regal Hills", "123", "D", 2, 32000, 750, 3, "Fully", 1, 3);
+INSERT INTO house VALUES ("Regal Hills", "124", "B", 1, 35000, 800, 4, "Fully", 2, 4);
+INSERT INTO house VALUES ("Regal Hills", "125", "A", 4, 28000, 700, 2, "Semi", 1, 5);
+INSERT INTO house VALUES ("Regal Hills", "126", "C", 3, 30000, 770, 3, "Fully", 3, 6);
+INSERT INTO house VALUES ("Regal Hills", "127", "B", 2, 33000, 780, 3, "Fully", 4, 7);
+INSERT INTO house VALUES ("Regal Hills", "128", "A", 1, 31000, 750, 2, "Fully", 5, 8);
+
+INSERT INTO house VALUES ("Royal Embassy", "382", "B", 2, 25000, 620, 2, "Semi", 2, 13);
+INSERT INTO house VALUES ("Royal Embassy", "383", "C", 3, 27000, 700, 2, "Semi", 1, 14);
+INSERT INTO house VALUES ("Royal Embassy", "384", "A", 1, 23000, 580, 1, "Semi", 3, 15);
+INSERT INTO house VALUES ("Royal Embassy", "385", "D", 4, 29000, 750, 3, "Fully", 1, 16);
+INSERT INTO house VALUES ("Royal Embassy", "386", "B", 2, 26000, 640, 2, "Semi", 2, 17);
+INSERT INTO house VALUES ("Royal Embassy", "387", "C", 3, 28000, 720, 2, "Fully", 3, 18);
+
+INSERT INTO house VALUES ("Green Meadows", "101", "A", 1, 20000, 550, 1, "Semi", 4, 9);
+INSERT INTO house VALUES ("Green Meadows", "102", "B", 2, 22000, 600, 2, "Semi", 5, 10);
+INSERT INTO house VALUES ("Green Meadows", "103", "C", 3, 24000, 650, 2, "Fully", 6, 11);
+INSERT INTO house VALUES ("Green Meadows", "104", "D", 4, 26000, 700, 3, "Fully", 4, 12);
+INSERT INTO house VALUES ("Green Meadows", "105", "A", 1, 18000, 500, 1, "Semi", 5, 10);
+INSERT INTO house VALUES ("Green Meadows", "106", "B", 2, 20000, 550, 2, "Semi", 6, 13);
+
+INSERT INTO house VALUES ("Golden Towers", "201", "A", 1, 18000, 500, 1, "Semi", 7, 12);
+INSERT INTO house VALUES ("Golden Towers", "202", "B", 2, 20000, 550, 2, "Semi", 8, 3);
+INSERT INTO house VALUES ("Golden Towers", "203", "C", 3, 22000, 600, 2, "Fully", 9, 4);
+INSERT INTO house VALUES ("Golden Towers", "204", "D", 4, 24000, 650, 3, "Fully", 7, 15);
+INSERT INTO house VALUES ("Golden Towers", "205", "A", 1, 17000, 480, 1, "Semi", 8, 18);
+INSERT INTO house VALUES ("Golden Towers", "206", "B", 2, 19000, 520, 2, "Semi", 9, 17);
+
+INSERT INTO house VALUES ("Sunrise Residency", "301", "A", 1, 26000, 720, 2, "Semi", 1, 11);
+INSERT INTO house VALUES ("Sunrise Residency", "302", "B", 2, 28000, 750, 2, "Fully", 4, 13);
+INSERT INTO house VALUES ("Sunrise Residency", "303", "C", 3, 30000, 780, 3, "Fully", 7, 4);
+INSERT INTO house VALUES ("Sunrise Residency", "304", "D", 4, 32000, 800, 3, "Fully", 5, 9);
+INSERT INTO house VALUES ("Sunrise Residency", "305", "A", 1, 25000, 690, 2, "Semi", 2, 10);
+INSERT INTO house VALUES ("Sunrise Residency", "306", "B", 2, 27000, 720, 2, "Fully", 9, 6);
+
+INSERT INTO feedback VALUES ("Regal Hills", "123", "D", "Overall satisfied with the experience.", 4);
+INSERT INTO feedback VALUES ("Regal Hills", "124", "B", "Excellent facilities, enjoyed my stay.", 5);
+INSERT INTO feedback VALUES ("Regal Hills", "125", "A", "Clean and tidy, no complaints.", 5);
+INSERT INTO feedback VALUES ("Regal Hills", "126", "C", "Comfortable living, good ambiance.", 4);
+INSERT INTO feedback VALUES ("Regal Hills", "127", "B", "Great staff, very helpful.", 5);
+INSERT INTO feedback VALUES ("Regal Hills", "128", "A", "Nice place, would recommend to others.", 4);
+INSERT INTO feedback VALUES ("Royal Embassy", "382", "B", "Excellent amenities!", 5);
+INSERT INTO feedback VALUES ("Royal Embassy", "383", "C", "Lovely view from the balcony.", 4);
+INSERT INTO feedback VALUES ("Royal Embassy", "384", "A", "Spacious rooms, loved it!", 4);
+INSERT INTO feedback VALUES ("Royal Embassy", "385", "D", "Great location, very convenient.", 5);
+INSERT INTO feedback VALUES ("Royal Embassy", "386", "B", "Good maintenance, everything worked well.", 4);
+INSERT INTO feedback VALUES ("Royal Embassy", "387", "C", "Nice neighborhood, friendly community.", 5);  
+
+INSERT INTO feedback VALUES ("Green Meadows", "101", "A", "Pleasant environment, enjoyed my stay.", 4);
+INSERT INTO feedback VALUES ("Green Meadows", "102", "B", "Good value for money, decent amenities.", 3);
+INSERT INTO feedback VALUES ("Green Meadows", "103", "C", "Beautiful landscaping, relaxing atmosphere.", 5);
+INSERT INTO feedback VALUES ("Green Meadows", "104", "D", "Convenient location, easy access to shops.", 4);
+INSERT INTO feedback VALUES ("Green Meadows", "105", "A", "Spacious apartment, well-furnished.", 4);
+INSERT INTO feedback VALUES ("Green Meadows", "106", "B", "Clean and tidy, friendly staff.", 5);
+INSERT INTO feedback VALUES ("Golden Towers", "201", "A", "Excellent service, very responsive.", 5);
+INSERT INTO feedback VALUES ("Golden Towers", "202", "B", "Enjoyed the amenities, especially the pool.", 4);
+INSERT INTO feedback VALUES ("Golden Towers", "203", "C", "Impressed with the security measures.", 5);
+INSERT INTO feedback VALUES ("Golden Towers", "204", "D", "Comfortable living, good ventilation.", 4);
+INSERT INTO feedback VALUES ("Golden Towers", "205", "A", "Great community, made some good friends.", 5);
+INSERT INTO feedback VALUES ("Golden Towers", "206", "B", "Well-maintained, no complaints.", 4);
